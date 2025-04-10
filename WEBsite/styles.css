@@ -1,0 +1,124 @@
+/* Custom Styles with Enhancements */
+body {
+  font-family: 'Poppins', sans-serif; /* Adding a modern, sleek font */
+  background: linear-gradient(to right, #f7f8f9, #eaeff2);
+  color: #2c3e50;
+}
+
+section {
+  padding: 60px 0;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding section shadows */
+}
+
+h1, h2, h3 {
+  color: #34495e;
+  text-align: center;
+  letter-spacing: 2px; /* Subtle spacing for headers */
+  text-transform: uppercase; /* Capitalized header text for emphasis */
+}
+
+.navbar {
+  background: linear-gradient(to right, #1d2671, #c33764) !important; /* Gradient navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffe08a !important; /* Add a warm hover effect */
+  transition: color 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  transform: translateY(-3px); /* Subtle hover animation */
+}
+
+footer {
+  background: linear-gradient(to right, #34495e, #2c3e50);
+  color: #bdc3c7;
+  text-align: center;
+  padding: 20px 0;
+}
+
+table {
+  margin-top: 20px;
+  border: 1px solid #bdc3c7;
+  background: linear-gradient(to right, #ffffff, #f8f9fa);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  text-align: center;
+  padding: 15px;
+}
+
+img {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Animated shadow effect */
+}
+
+#attendanceResult {
+  font-weight: bold;
+  color: #27ae60; /* Success theme */
+}
+
+/* Subtle Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section, footer {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-1px);
+  }
+  20%, 80% {
+    transform: translateX(2px);
+  }
+  30%, 50%, 70% {
+    transform: translateX(-2px);
+  }
+  40%, 60% {
+    transform: translateX(2px);
+  }
+}
